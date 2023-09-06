@@ -1,0 +1,17 @@
+commit f2e9e2a62e6deb99c612b4b3090b8a6ec79f506e
+Author: JonathanWSL <jaurrutia.95@gmail.com>
+Date:   Wed Feb 2 01:23:29 2022 -0600
+
+    Archivo py
+
+commit bb20375df6ceb906b9d2f5a1ea453698404b85c2
+Author: JonathanWSL <jaurrutia.95@gmail.com>
+Date:   Wed Feb 2 01:22:41 2022 -0600
+
+    Instrucciones
+
+commit 416b80db448885e99cdfa8ae0338db7f481f61e3
+Author: Jonathan Alexis Urrutia Anguiano <jaurrutia.95@gmail.com>
+Date:   Wed Feb 2 00:37:48 2022 -0600
+
+    Initial commit

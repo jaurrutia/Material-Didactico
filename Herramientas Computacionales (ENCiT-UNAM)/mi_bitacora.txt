@@ -1,0 +1,270 @@
+commit 4771d0c3c5d0da899bbc4a3a20b336987a118424
+Author: Jonathan <jaurrutia.95@gmail.com>
+Date:   Mon Feb 28 15:08:41 2022 -0600
+
+    wordplot
+
+commit 1a34105fc09fd8770e7639e97e5d8dac0b04bbc9
+Author: Jonathan <jaurrutia.95@gmail.com>
+Date:   Thu Feb 24 17:01:45 2022 -0600
+
+    Clase numeros y programas
+
+commit 117ba5d9bc6263153824b1b89364ca0153fd650e
+Author: Jonathan <jaurrutia.95@gmail.com>
+Date:   Tue Feb 22 16:45:08 2022 -0600
+
+    Numeros en python
+
+commit 45e8a10fbf5b6af76fa6a6c6c54ca7f0e4de29c8
+Author: Jonathan <jaurrutia.95@gmail.com>
+Date:   Tue Feb 22 16:44:48 2022 -0600
+
+    Actualizando clase strnigs
+
+commit 6b238a32730856358767bf68c5426981cf5e83cf
+Author: Jonathan <jaurrutia.95@gmail.com>
+Date:   Mon Feb 21 23:04:03 2022 -0600
+
+    distancias de caracteres
+
+commit f3fa85272f1d4f96f32d30f9b8d822daf3a6b6e7
+Author: Jonathan <jaurrutia.95@gmail.com>
+Date:   Mon Feb 21 23:03:36 2022 -0600
+
+    Extendiendo a acentros
+
+commit dccd5f1fd37ae5eb8eb8bf0f9cf2a590e510f9af
+Author: Jonathan <jaurrutia.95@gmail.com>
+Date:   Mon Feb 21 22:18:35 2022 -0600
+
+    tarea strings
+
+commit 6e6eca590292c0d793b24e1a1d461ca01bdaf645
+Author: Jonathan <jaurrutia.95@gmail.com>
+Date:   Mon Feb 21 22:18:06 2022 -0600
+
+    reestructurando
+
+commit f884de9e1cb6d235808fb21d3fd1c3b48c43a02f
+Author: Jonathan <jaurrutia.95@gmail.com>
+Date:   Mon Feb 21 22:14:42 2022 -0600
+
+    Clase de Strings
+
+commit 762832baa46850773dab6adbb5436cc8e9fe09d4
+Author: Jonathan <jaurrutia.95@gmail.com>
+Date:   Mon Feb 21 17:04:00 2022 -0600
+
+    Cambios de la clase
+
+commit d0033c0420ad12f8bb13e3a73e583f4f517db563
+Author: Jonathan <jaurrutia.95@gmail.com>
+Date:   Mon Feb 21 14:08:01 2022 -0600
+
+    Booleanos
+
+commit 986532c5fd04129af54b0a0cbbf26039927a847d
+Author: Jonathan <jaurrutia.95@gmail.com>
+Date:   Mon Feb 21 13:29:22 2022 -0600
+
+    ejemplos de strings
+
+commit 6e93b3263ada83f74ff40be72874b959079ca4cf
+Author: Jonathan <jaurrutia.95@gmail.com>
+Date:   Thu Feb 17 19:55:30 2022 -0600
+
+    cambiando nombre
+
+commit 5f0c276ada7a94904d51f06233837a6419bb7d8d
+Author: Jonathan <jaurrutia.95@gmail.com>
+Date:   Thu Feb 17 19:51:23 2022 -0600
+
+    Peleandome con el codigo
+
+commit 794a7ec4f83e8649a3eaf5a423f48d204ac48b3d
+Author: Jonathan <jaurrutia.95@gmail.com>
+Date:   Thu Feb 17 16:57:50 2022 -0600
+
+    Clase 17 ed feb
+
+commit 78799c6bc43492e42fc772f82f4d7aa31864f265
+Author: Jonathan <jaurrutia.95@gmail.com>
+Date:   Mon Feb 14 16:53:15 2022 -0600
+
+    Clase 14 feb
+
+commit bba616bdcdf037bbd96154c328af055bc3c6bb81
+Author: Jonathan <jaurrutia.95@gmail.com>
+Date:   Thu Feb 10 23:29:08 2022 -0600
+
+    mas ejercicios
+
+commit fbf8c8fa28ade398e4022c341bc5910306265eb4
+Author: Jonathan <jaurrutia.95@gmail.com>
+Date:   Wed Feb 9 23:16:04 2022 -0600
+
+    strings termianl
+
+commit 4fd20456b206406ef743e673a52df36f8cc4ca70
+Author: Jonathan <jaurrutia.95@gmail.com>
+Date:   Wed Feb 9 23:14:42 2022 -0600
+
+    strings
+
+commit 4d48bf005c8722d4cc4e2ad49b293cf415efdb47
+Author: Jonathan <jaurrutia.95@gmail.com>
+Date:   Wed Feb 9 23:14:29 2022 -0600
+
+    Usando .gitignore
+
+commit cfdaf77f7a4264a699d43cee75bf1681db30206e
+Author: Jonathan <jaurrutia.95@gmail.com>
+Date:   Wed Feb 9 22:20:05 2022 -0600
+
+    strings
+
+commit dc892217936a4f087fd35ab14d82fd7832792a09
+Author: Jonathan <jaurrutia.95@gmail.com>
+Date:   Wed Feb 9 14:58:47 2022 -0600
+
+    Caracteres y cadenas
+
+commit 856c3c612081421f7687c9bfe833c2d3b4129bac
+Author: Jonathan <jaurrutia.95@gmail.com>
+Date:   Wed Feb 9 14:58:29 2022 -0600
+
+    cambio menor
+
+commit 3f491c319cbb25b617319dcd633362e0e0773fe1
+Author: JonathanWSL <jaurrutia.95@gmail.com>
+Date:   Thu Feb 3 23:15:30 2022 -0600
+
+    Diccionario bash
+
+commit 346a0bd4d914f5ae479685c3640b5500a9402223
+Author: Jonathan Alexis Urrutia Anguiano <jaurrutia.95@gmail.com>
+Date:   Thu Feb 3 22:59:31 2022 -0600
+
+    evaluacion bonita
+
+commit 528bf86c7a193cc2cbafcd35f97ebbb4b803a2e5
+Merge: 66ee6eb e31fb1d
+Author: JonathanWSL <jaurrutia.95@gmail.com>
+Date:   Thu Feb 3 22:47:45 2022 -0600
+
+    codigo tarea
+
+commit 66ee6eb3857d39851009cee4c4a4bad9625c2fb2
+Author: JonathanWSL <jaurrutia.95@gmail.com>
+Date:   Thu Feb 3 22:42:16 2022 -0600
+
+    Cambiando el orden de tonterias
+
+commit e31fb1db385304d5dc6376047904a57c05b498a4
+Author: Jonathan Alexis Urrutia Anguiano <jaurrutia.95@gmail.com>
+Date:   Thu Feb 3 22:15:28 2022 -0600
+
+    determinando la evaluacion
+
+commit e7fd1a8d96aa2e9c9e91d2d14c7726dabe15513b
+Author: Jonathan Alexis Urrutia Anguiano <jaurrutia.95@gmail.com>
+Date:   Thu Feb 3 01:06:42 2022 -0600
+
+    Reestructura
+
+commit 96ef48eb7f1525f66f0b7eb035684774b2f63534
+Author: Jonathan <jaurrutia.95@gmail.com>
+Date:   Thu Feb 3 00:56:39 2022 -0600
+
+    Pasar arguementos
+
+commit 25d18f1c2fc5d8314acec84a7c4c99c12e201920
+Author: Jonathan <jaurrutia.95@gmail.com>
+Date:   Thu Feb 3 00:32:08 2022 -0600
+
+    nombre dir
+
+commit a3d6c5cea0fa48ca9c8a6c5a0f12a3227472c626
+Author: Jonathan <jaurrutia.95@gmail.com>
+Date:   Thu Feb 3 00:26:05 2022 -0600
+
+    Explicando el curso
+
+commit 680bf5c404d7621287613e72c72b05508f6444eb
+Author: Jonathan <jaurrutia.95@gmail.com>
+Date:   Thu Feb 3 00:21:42 2022 -0600
+
+    formato
+
+commit 70a951da9af1ad6df903729d34dbd86c2145ea14
+Author: Jonathan <jaurrutia.95@gmail.com>
+Date:   Thu Feb 3 00:18:43 2022 -0600
+
+    Intro
+
+commit 443d8c98b023b5a1a5a439328ea608a792c19e64
+Author: Jonathan <jaurrutia.95@gmail.com>
+Date:   Wed Feb 2 18:29:57 2022 -0600
+
+    Primer tarea
+
+commit ec323373b05487e97ae5b63936c8a31322ce187e
+Author: Jonathan <jaurrutia.95@gmail.com>
+Date:   Wed Feb 2 18:27:33 2022 -0600
+
+    algunas formas de modificar la sintaxis básica
+
+commit 298e7100bc24b1adfe0e3e6b625fedaad8e36c2a
+Author: Jonathan <jaurrutia.95@gmail.com>
+Date:   Wed Feb 2 18:27:12 2022 -0600
+
+    Comentar un código acceder a su output
+
+commit ad7b04401c07471a0a480f2eaeb8799191f03060
+Author: Jonathan <jaurrutia.95@gmail.com>
+Date:   Wed Feb 2 18:26:20 2022 -0600
+
+    Hola, mundo
+
+commit 70190d98282d2081dfd0b3c00f5ad0ee387e5565
+Author: JonathanWSL <jaurrutia.95@gmail.com>
+Date:   Wed Feb 2 00:05:37 2022 -0600
+
+    Listax2
+
+commit ab4f1199b7a58e6fada4aed31b72b5a9ad319632
+Author: JonathanWSL <jaurrutia.95@gmail.com>
+Date:   Wed Feb 2 00:04:35 2022 -0600
+
+    Lista
+
+commit 0dde561b94b3e669f52400d79e3af5a17c8c15a8
+Author: Jonathan Alexis Urrutia Anguiano <jaurrutia.95@gmail.com>
+Date:   Tue Feb 1 23:58:33 2022 -0600
+
+    Formato README
+
+commit 6aa8e10056567ab78bb5c374478d4a5416d306e5
+Author: Jonathan Alexis Urrutia Anguiano <jaurrutia.95@gmail.com>
+Date:   Tue Feb 1 23:58:02 2022 -0600
+
+    Correccion de formato
+
+commit c42d75fbc5eb633d05ebaaf72e907eb09fe1a6b4
+Author: JonathanWSL <jaurrutia.95@gmail.com>
+Date:   Tue Feb 1 23:55:37 2022 -0600
+
+    Temario
+
+commit 902efd93c6bb8aa6c8beda675c5a816519eaea7c
+Author: Jonathan <jaurrutia.95@gmail.com>
+Date:   Fri Jan 28 13:28:07 2022 -0600
+
+    Primera tarea
+
+commit 7db7518816dc81a3aa81069988b966fa687e4d6b
+Author: Jonathan Alexis Urrutia Anguiano <jaurrutia.95@gmail.com>
+Date:   Fri Jan 28 13:15:48 2022 -0600
+
+    Initial commit

@@ -1,0 +1,6 @@
+Dame un valor inicial de dinero con numeros:
+1 840.0
+2 882.0
+3 926.1
+4 972.4050000000001
+5 1021.0252500000001
