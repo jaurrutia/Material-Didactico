@@ -1,0 +1,3 @@
+# Ignorando los checkpoints de los jupyter notebooks
+.ipynb_checkpoints
+
