@@ -5,7 +5,7 @@
 <meta content="chrome=1" http-equiv="X-UA-Compatible"/>
 <meta content="yes" name="apple-mobile-web-app-capable"/>
 <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"/>
-<title>4-ODE-PrimerOrden slides</title><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>5-MovimientoCircular slides</title><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <!-- General and theme style sheets -->
 <link href="https://unpkg.com/reveal.js@4.0.2/dist/reveal.css" rel="stylesheet"/>
 <!-- If the query includes 'print-pdf', include the PDF print sheet -->
@@ -14662,7 +14662,7 @@ div.jp-OutputPrompt {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Modelaci%C3%B3n-de-sistemas-din%C3%A1micos"><strong>Modelación de sistemas dinámicos</strong><a class="anchor-link" href="#Modelaci%C3%B3n-de-sistemas-din%C3%A1micos">¶</a></h1><h1 id="ODE-de-primer-orden">ODE de primer orden<a class="anchor-link" href="#ODE-de-primer-orden">¶</a></h1><h3 id="M.-en-C.-Jonathan-A.-Urrutia-Anguiano">M. en C. Jonathan A. Urrutia Anguiano<a class="anchor-link" href="#M.-en-C.-Jonathan-A.-Urrutia-Anguiano">¶</a></h3><h3 id="MA1035.535">MA1035.535<a class="anchor-link" href="#MA1035.535">¶</a></h3><div hidden="">
+<h1 id="Modelaci%C3%B3n-del-movimiento-en-ingenier%C3%ADa"><strong>Modelación del movimiento en ingeniería</strong><a class="anchor-link" href="#Modelaci%C3%B3n-del-movimiento-en-ingenier%C3%ADa">¶</a></h1><h1 id="Movimiento-circular">Movimiento circular<a class="anchor-link" href="#Movimiento-circular">¶</a></h1><h3 id="M.-en-C.-Jonathan-A.-Urrutia-Anguiano">M. en C. Jonathan A. Urrutia Anguiano<a class="anchor-link" href="#M.-en-C.-Jonathan-A.-Urrutia-Anguiano">¶</a></h3><h3 id="F1006B.218">F1006B.218<a class="anchor-link" href="#F1006B.218">¶</a></h3><div hidden="">
 $\def\dd{\text{d}}$
 $\def\dv#1#2{\dfrac{\text{d} #1}{\text{d}#2}}$
 $\def\mdv#1#2#3{\dfrac{\text{d}^{#3} #1}{\text{d}#2^{#3}}}$
@@ -14680,15 +14680,35 @@ $\def\pdv#1#2#3{\dfrac{\partial^{#3} #1}{\partial #2^{#3}}}$
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="ODE-de-primer-orden-m%C3%A1s-sencilla">ODE de primer orden más sencilla<a class="anchor-link" href="#ODE-de-primer-orden-m%C3%A1s-sencilla">¶</a></h3><p>El caso general de una *<strong>ordinary differential equation</strong>* (ODE) de primer ordén explícita es:</p>
+<h2 id="Cantidades-din%C3%A1micas">Cantidades dinámicas<a class="anchor-link" href="#Cantidades-din%C3%A1micas">¶</a></h2><p>Para describir el movimiento de una partícula, se emplea el vector posición $\vec{r}$, el cuál da una expresión para conocer en qué punto del espacio tridimencional se encuentra la partícula como función del tiempo $t$.</p>
+<p>Es posible calcular los cambios de la posición al pasar el tiempo <em>calculando la derivada respecto al tiempo</em> de esta canidad, lo que determina la antidad física llamada <em>velocidad instantánea</em>. Al volver a derivar, se obtiene la relación con la <em>aceleración</em>.</p>
+<p>En coordenadas cartesianas, la derivación respecto a tiempo se puede realizar componente a componente, es decir, se cumplen las siguientes expresiones:</p>
+<p>$$
+   \vec{r} =  (x (t),\; y(t),\; z(t))  \qquad\Longrightarrow  \qquad\vec{v} =  \dot{\vec{r}} =  (\dot{x} (t),\; \dot{y}(t),\; \dot{z}(t))  
+   \qquad\Longrightarrow   \qquad\vec{a} =  \ddot{\vec{r}} =  (\ddot{x} (t),\; \ddot{y}(t),\; \ddot{z}(t))  
+   $$</p>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Aceleraci%C3%B3n-y-velocidad-lineales">Aceleración y velocidad lineales<a class="anchor-link" href="#Aceleraci%C3%B3n-y-velocidad-lineales">¶</a></h2><p>En la deducción del movimiento uniformemente acelerado (en su notación vectorial), se asumión una aceleración constante $\vec{a}$ y se realizaron las integraciones para calcular la posición. Es decir</p>
 $$
-\dv{y}{t} = f(y,t),
-$$<p>donde $y = y(t)$ es la función a determinar, $t$ su variable dependiente y $f$ una función que depende de $y$ así como de $t$.</p>
-<p>La ODE de primer orden anterior está resuleta de forma autómatica si $f$ no depende explícitamente de $y$, es decir:
+\vec{a}(t) = \vec{a} \equiv \text{cte}
+    \quad\Longrightarrow\quad
+\vec{v} = \int_{t_0}^{t}\vec{a}(t)\dd{t} = \vec{v}_0 + \vec{a} (t -t_0) 
+    \quad\Longrightarrow\quad
+\vec{r} = \int_{t_0}^{t}\vec{v}(t)\dd{t} = \int_{t_0}^t\left(\vec{v}_0 + \vec{a} (t -t_0) \right)\dd{t}
+$$<p>por lo que finalmente
 $$
-\dv{y}{t} = f(t) \Longrightarrow \int \dv{y}{t} \dd{t} = y(t) = \int f(t) \dd{t} + C,
-$$
-donde se empleó el teorema fundamental del cálculo (TFC), y se añade una constante de integración a determinar con las condiciones iniciales (de frontera) del problema específico.</p>
+\vec{r}(t) = \vec{r}_0 + \vec{v}_0 (t - t_0) + \frac12 \vec{a}(t-t_0)^2.
+$$+</p>
+<p>Dado que todas estas cantidad, componente a componente, hacen referencia a el movimiento enuna dimensión, se les conoce como aceleraciones, velocidades y desplazamientos linales.</p>
+<p>¿Son el único tipo de desplazamientos?</p>
 </div>
 </div>
 </div>
@@ -14698,21 +14718,9 @@ donde se empleó el teorema fundamental del cálculo (TFC), y se añade una cons
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="ODE-de-primer-orden-lineales-y-homog%C3%A9neas">ODE de primer orden lineales y homogéneas<a class="anchor-link" href="#ODE-de-primer-orden-lineales-y-homog%C3%A9neas">¶</a></h2><h3 id="Coeficientes-constantes">Coeficientes constantes<a class="anchor-link" href="#Coeficientes-constantes">¶</a></h3><p>Una ODE de primer orden lineal (en el caso homogéneo) se escribe en general como</p>
-$$
-a_1(t)\dv{y(t)}{t} + a_0(t)y(t)=0,
-$$<p>con $a_1(t)$ y $a_0(t)$ funciones de $t$.La ecuación anterior tiene una solución exacta si las funciones $a_1\neq 0$ y $a_0$ son constantes; en este caso la ecuación anterior se reescribe como:</p>
-$$
-\begin{aligned}
-\dv{y(t)}{t}  =  -\frac{a_0}{a_1}y(t)\qquad \Longrightarrow 
-     \qquad\int\frac{1}{y(t)} \dv{y}{t} \dd{t}  = \int  -\frac{a_0}{a_1} \dd{t} = -\frac{a_0}{a_1}t + C,
-\end{aligned}
-$$<p>Realizando el cambio de variable $\dd{y} = (\dd{y}/\dd{t})\dd{t}$ se obtiene que</p>
-$$
-\begin{aligned}
-\int\frac{1}{y(t)} \dv{y}{t} \dd{t}  = \int \frac{\dd{y}}{y} \int = \ln|y|  = -\frac{a_0}{a_1}t + C,
-\end{aligned}
-$$
+<h2 id="Movimientos-giratorios">Movimientos giratorios<a class="anchor-link" href="#Movimientos-giratorios">¶</a></h2><p>En esta sección se hará en enfoque inverso: conociendo la trayectoria de una partícula, se derivará ésta para calcular la velocidad y la aceleración de este objeto. Sin embargo antes de ahondar en este tema, retomaremos el tema de la longitud de arco, y de los <strong>radianes</strong>.</p>
+<p>Luego, con estas nuevas unidades se definirá una variable de desplazamiento angular $\theta$, una velocidad angular $\dot{\theta} = \omega$ y una aceleración angular $\ddot{\theta} = \alpha$. Todas estas cantidades asociadas a giros de un partíula alrededor de un eje.</p>
+<p>Finalmente, relacionaremos la variables dinámicas lineales  con las angulares.</p>
 </div>
 </div>
 </div>
@@ -14722,246 +14730,208 @@ $$
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Partiendo del resultado:</p>
-$$
-\begin{aligned}
-\int\frac{1}{y(t)} \dv{y}{t} \dd{t}  = \int \frac{\dd{y}}{y} \int = \ln|y|  = -\frac{a_0}{a_1}t + C,
-\end{aligned}
-$$<p>es posible aplicar la función exponencial en la última igualdad y despejar $y$ como función de $t$, dando como resultado:</p>
-$$
-a_1(t)\dv{y(t)}{t} + a_0(t)y(t)=0
-\qquad\Longleftrightarrow \qquad
-y(t) = y_0\exp\left(- \frac{a_0}{a_1}t\right),
-$$<p>con $y_0 = \exp(C)$, una constante de integración.</p>
-</div>
-</div>
-</div>
-</div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Coeficientes-no-constantes">Coeficientes no constantes<a class="anchor-link" href="#Coeficientes-no-constantes">¶</a></h3><p>Retomemos el caso de la ODE homogénea lineal con $a_1(t)\neq 0$ y $a_0(t)\neq 0$:</p>
-$$
-a_1(t)\dv{y(t)}{t} + a_0(t)y(t)=0.
-$$<p>Haciéndo un procedimiento análogo al caso anterior, se llega la siguiente expresión:</p>
-$$
-\begin{aligned}
- \frac{1}{y(t)} \dv{y}{t} =  -\frac{a_0(t)}{a_1(t)} \equiv g(t),
-\end{aligned}
-$$<p>donde se definió a $g(t)$ como el cociente de dos funciones de $t$. Notemos que al aplicar la integración respecto a $t$ de ambos lados de la ecuación, y siguiendo el procedimiento anteriormente descrito, es posible despejar la expresión de $y(t)$ en términos de la integral de $g(t)$. Es decir, la solución general de la ODE lineal no homogénea con coeficientes no constantes es:</p>
-$$
-a_1(t)\dv{y(t)}{t} + a_0(t)y(t)=0 
-\qquad\Longleftrightarrow \qquad
-y(t) = y_0\exp\left(\int g(t)\dd{t}\right),
-$$<p>con $y_0 = \exp(C)$. La expresión anterior es un caso general del método de <strong>separación de variables</strong>.</p>
-<p>Con estos dos procedimientos se ha mostrado que para el caso homogéneo, la ODE lineal siempre tiene solución.</p>
-</div>
-</div>
-</div>
-</div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Ejemplo:-Fuerza-de-arrastre-seg%C3%BAn-la-Ley-de-Stokes">Ejemplo: Fuerza de arrastre según la Ley de Stokes<a class="anchor-link" href="#Ejemplo:-Fuerza-de-arrastre-seg%C3%BAn-la-Ley-de-Stokes">¶</a></h3><p>Para considerar los efectos del arraste, es razonable suponer, para objetos <em>ligeros</em>, que la fuerza de arrastre $\vec{F}_\text{drag}$ es $\vec{F}_\text{drag} = -m\gamma\vec{v}$, por lo que la ecuación diferencial a resolver es:
-$$
-\begin{aligned}
-m\dv{v_y}{t} = - mg - m\gamma v_y
-\qquad\Longrightarrow\qquad
-\dv{v_y}{t} + \gamma v_y + g = 0
-\qquad\Longrightarrow\qquad
-\dv{(v_y+ g/\gamma)}{t} + \gamma (v_y + g/\gamma) = 0
-\end{aligned}
-$$
-donde $m$ es la masa de la partícula, $g$ la aceleración debido a la gravedad y  $\gamma&gt;0$ es un coeficiente realacionado con la densidad de masa de la partícula, su sección transversal y la vsicosidad del medio en el que viaja. Anteriormente resolvimos esta ecuación diferencial mediante el método de sepración de variables sin embargo, ahora podemos emplear la fórmula directametne y corroborar que</p>
-$$
-v_y(t) + \frac{g}{\gamma} =  \left(v_0 + \frac{g}{\gamma} \right) \exp[-\gamma(t-t_0)]
-$$
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="ODE-de-primer-orden-lineales-y-no-homog%C3%A9neas">ODE de primer orden lineales y no homogéneas<a class="anchor-link" href="#ODE-de-primer-orden-lineales-y-no-homog%C3%A9neas">¶</a></h2><h3 id="Factor-integante">Factor integante<a class="anchor-link" href="#Factor-integante">¶</a></h3><p>Una ODE de primer orden lineal se escribe en general como</p>
-$$
-a_1(t)\dv{y(t)}{t} + a_0(t)y(t)= b(t),
-$$<p>con $a_1(t)$ y $a_0(t)$ funciones de $t$ y $b(t)$ es la función denominada como fuente. Asumiendo que $a_1(t)\neq 0$, la ecuación se puede reescribir como</p>
-$$
-\begin{equation}
-\dv{y(t)}{t} + p(t)y(t)= f(t). \tag{1}
-\end{equation}
-$$<p>Con esta expresión es posible encontrar una solución general para toda ODE lieal no homogénes. Para desarrollar la solución recordaremos:</p>
-<ul>
-<li>Regla del producto para derivadas</li>
-<li>Teorema Fundamental del Cálculo (TFC)</li>
-<li>Solución de ODE lineales homogéneas</li>
-</ul>
-</div>
-</div>
-</div>
-</div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Regla-del-producto-para-derivadas">Regla del producto para derivadas<a class="anchor-link" href="#Regla-del-producto-para-derivadas">¶</a></h3><p>Para proponer una solución de la Ec. (1) recordemos que si se deriva el producto de dos funciones, por ejemplo $y(t)$ y $\mu(t)$, entonces</p>
-$$
-\begin{equation}
-\dv{}{t}\big[y(t)\mu(t)\big] =  \mu(t) \dv{y(t)}{t} + \dv{\mu(t)}{t} y(t). \tag{2}
-\end{equation}
-$$<p>Multiplicando la Ec. (1) por la función $\mu(t)$, ésta se reescribe como
-$$
-\begin{equation}
-\mu(t)\dv{y(t)}{t} + \mu(t)p(t)y(t)= \,\mu(t)f(t). \tag{3}
-\end{equation}
-$$
-Comparando el lado derecho de la Ec. (2) con el izquierdo de la Ec. (3) podemos notar que
-$$
-\text{Si }\qquad \dv{\mu(t)}{t} =  \mu(t)p(t),\qquad \text{entonces}\qquad  \dv{}{t}\big[y(t)\mu(t)\big] = \,\mu(t)f(t).
-$$
-Por tanto, es posible depejar $y(t)$ mediante una integración respecto a $t$ y empleando el TFC, dando como resultado:
-$$
-y(t)= \frac{1}{\mu(t)}\left( \int \mu(t)f(t)\, \dd{t} + C\right),
-$$
-sin embargo falta determinar a la función $\mu(t)$.</p>
-</div>
-</div>
-</div>
-</div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Expresi%C3%B3n-del-factor-integrante">Expresión del factor integrante<a class="anchor-link" href="#Expresi%C3%B3n-del-factor-integrante">¶</a></h3><p>Notemos que el factor integrante $\mu(t)$ cumple con la siguiente expresión
-$$ \dv{\mu(t)}{t} =  \mu(t)p(t),$$
-es decir, es una ecuación diferencial de primer orden que puede resolverse mediante separación de variables. Dividiendo la ecuación anterior entre $\mu(t)$, realizando una integración respecto a $t$ y haciendo uso del teorema de cambio de variables se obtiene que</p>
-$$
-\mu(t) = \mu_0 \exp\left(\int p(t)\dd{t}\right),
-$$<p>donde $\mu_0$ es una constante de integración.</p>
-<p>Sustituyendo este resultado en nuestra expresión de $y(t)$ habremos resuelto el problema en su totalidad</p>
-</div>
-</div>
-</div>
-</div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Conclusi%C3%B3n:">Conclusión:<a class="anchor-link" href="#Conclusi%C3%B3n:">¶</a></h2><p>Para una ecuación diferencial lineal de primer grado que pueda escribirse como</p>
-$$
-\dv{y(t)}{t} + p(t)y(t)= f(t),
-$$<p>la solución está dada por</p>
-$$
-y(t)= \frac{1}{\mu(t)} \left( \int \mu(t)f(t)\, \dd{t} + C\right),\qquad\text{donde}\qquad \mu(t) = \mu_0 \exp\left(\int p(t)\dd{t}\right),
-$$<p>lo que deviene en la siguiente expresión</p>
-$$
-y(t)= \exp\left(-\int p(t)\dd{t}\right) \int \exp\left(\int p(t)\dd{t}\right)f(t)\, \dd{t} + C\exp\left(-\int p(t)\dd{t}\right).
-$$
-</div>
-</div>
-</div>
-</div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Ejercicios-en-clase">Ejercicios en clase<a class="anchor-link" href="#Ejercicios-en-clase">¶</a></h2><p>Resuelve los siguientes problemas de condiciones iniciales</p>
-<ul>
-<li>$\cos(t)\dot{y} + \sin(t) y = 2 \cos^3(t)\sin(t) - 1, \qquad y(\pi/4) = 2\sqrt{2}$</li>
-<li>$t\dot{y} + 2 y = t^2 - t + 1 , \qquad y(1) = 1/2$</li>
-</ul>
-<p>Si quieres apoyo en las soluciones (una vez que hayas intentado resolver las eucaciones) te recomiendo <a href="https://tutorial.math.lamar.edu/classes/de/linear.aspx">este portal</a></p>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Aplicaciones-de-las-ODE-de-primer-orden">Aplicaciones de las ODE de primer orden<a class="anchor-link" href="#Aplicaciones-de-las-ODE-de-primer-orden">¶</a></h2><p>A lo largo de estas clases hemos visto cómo se pueden modelar distintas siutaciones con las mismas ecuaciones diferenciales:</p>
-<p><strong>Problemas de población</strong>: En este tipo de problemas podemos englobar cómo evoluciona una muestra, por ejemplo, biológica de bacterias, de gente, el aumennto de la velocidad de un objeto ante fuerzas de arrastre, e incluso el interés compuesto de una inversión, así como el decaimiento de elementos debido a radiactividad (pruebas de Carbono 14) o bien, el cambio de temperatura de algunos objetos. En general, todas están modeladas por ODE de primer orden con coeficientes constantes</p>
-$$
-\dv{y}{t} = \pm \gamma y.
-$$<p><strong>Problemas de mezclas</strong>: Este caso es igualmente modelado por ODE lineales sin embargo por su importancia en ingeniería y ciencias biológicas de trata de forma independiente.</p>
-</div>
-</div>
-</div>
-</div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Problemas-de-mezclas">Problemas de mezclas<a class="anchor-link" href="#Problemas-de-mezclas">¶</a></h3><p>Se considera la evolución temporal de algún agente bajo las siguientes condiciones:</p>
-<ul>
-<li>Volumen del sistema fijo: $V$</li>
-<li>Concentración constante de una sustancia $\chi$ que entra al sistema $V$ con una tasa $\gamma_\text{in}$</li>
-<li>La mezcla anterior es homogénea de forma instantanea.</li>
-<li>Fujo de salida que permite mantener el volumen constante del sistema.</li>
-</ul>
-<p>En general, el cambio de la sustancia $\chi(t)$ en el sistema está dado por:</p>
-$$
-\dv{\chi}{t} = \left(\begin{array}{cc}\text{Material que entra} \\ \text{al sistema}\end{array}\right)
-    \quad- \quad 
-    \left(\begin{array}{cc}\text{Material que sale} \\ \text{del sistema}\end{array} \right).
-$$
-</div>
-</div>
-</div>
-</div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Por ejemplo:</p>
-<p>La cantidad de sal en un contenedor de volumen $V$ (en litros) de agua está dada por la variable $s(t)$ (en gramos). Una mezcla de agua con sal conuna concentración de $\rho$ (gr/lt) se introduce al contenedor a una velocidad de $\gamma_\text{in}$ (lt/min); al mismo tiempo se retira la mezcla del sistema a una taza $\gamma_\text{out}$ de tal suerte que se mantien constante el volumen $V$.</p>
-<p>¿Cómo se calcula $s(t)$?</p>
-$$
-\begin{aligned}
-\left(\begin{array}{cc}
-    \text{Material que entra} \\ 
-    \text{al sistema}
-    \end{array}\right) 
-    =&amp;  \rho \gamma_\text{in}  \;[ = ] \; \frac{\text{gr}}{\text{tl}} \times \frac{\text{lt}}{\text{min}} =  \frac{\text{gr}}{\text{min}},\\ \\
-\left(\begin{array}{cc}
-    \text{Material que sale} \\
-    \text{del sistema}
-    \end{array}\right) 
-    =&amp;  {s(t)}\frac{1}{V} \gamma_\text{out} \; [ = ] \; {\text{gr}}\times\frac{1}{\text{tl}} \times \frac{\text{lt}}{\text{min}} =  \frac{\text{gr}}{\text{min}},\\
-\end{aligned}
-$$<p>Entonces, la ecuación para este caso particular estádad por:</p>
-$$
-\dv{s(t)}{t} = \rho \gamma_\text{in} -\frac{s(t)}{V} \gamma_\text{out},
-$$<p>la cual es una ODE lineal de primer orden.</p>
-</div>
-</div>
-</div>
-</div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><img alt="Mixing" src="1-Mixing.png"/></p>
+<h3 id="Longitud-de-arco-y-los-radianes">Longitud de arco y los radianes<a class="anchor-link" href="#Longitud-de-arco-y-los-radianes">¶</a></h3><p>Estra cantidad expresa la distancia $s$ entre un dos puntos de una circunferencia de radio $r$ dado un desplazamiento angular (un giro) denotado por la variable $\theta$.
+        Si consideramos el total de la circunferencia del círculo, la longitud de arco es igual a su perímetro, es decir
+                $$ s = r (2\pi).$$</p>
+<table>
+<tr>
+<td>
+<img alt="No description has been provided for this image" src="14-LongArco.png" width="500"/>
+</td>
+<td>
+        Si, por el contrario consideramos cualquier otro desplazamiento angular, en la expresión anterio se sutituye $2\pi$ por  $\theta$, por lo que en general se tiene la expresion:
+        $$ s = r \theta.$$
+        Notemos que si se despeja el desplzamiento angular, se tiene una variable adimensional; esta variable se empleará para definir los ángulos de ahora en adelante y se le dará por nombre a esta unidad como <b>radian</b>: Para convertir de radianes a grados, o al revés, notemos que una vuelta completa al círculo es $360^\circ$, como también $2\pi$ radianes, por tanto
+        $$
+        2\pi (\text{rad}) = 360^\circ (\text{grado}) \quad\Longrightarrow\quad \pi = 180^\circ.
+        $$
+    </td>
+</tr>
+</table>
 <hr/>
-<p>Blanchard, Paul, et al. Differential Equations. 4a ed., Brooks/Cole, Cengage Learning, 2012.</p>
+<p>Kleppner, Daniel, y Robert J. Kolenkow. "An Introduction to Mechanics". Cambridge University Press, 2010</p>
 </div>
 </div>
 </div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Variables-din%C3%A1micas-angulares">Variables dinámicas angulares<a class="anchor-link" href="#Variables-din%C3%A1micas-angulares">¶</a></h3><p>Suponiendo que una portícula se mueve a lo largo de una circunferencia de radio $r$, que es consntate, podemos describir su dinámica posición a lo largo de la circunferencia al medir su longitu de arco $s(t)$. Sin embargo su dinámica sedetermina únicamente es  en términos de su desplazamiento angular $\theta$, ues el radio de la circunferencia es constante, por lo que ahora $\theta$ es una función del tiempo, es decir $\theta=\theta(t)$. De esta forma, al derivar $s(t)$, respecto al tiempo se tiene lo siguiente</p>
+$$
+\begin{aligned}
+s(t) = r \theta(t) \quad\Longrightarrow\quad v(t) = t \dv{\theta}{t} = r \omega(t) \quad\Longrightarrow\quad a(t) = r\mdv{\theta}{t}{2} = r \alpha(t)
+\end{aligned}
+$$<ul>
+<li>Las funciones $\omega(t)$ y $\alpha(t)$ se conocen como velocidad y aceleración angular, y se relacionan con sun homólogos lineales al multiplicarlas por el radio de la circunferencia por la que se mueven.</li>
+<li>Cabe destacar que en este caso las velocidad y la aceleracion no tienen caracter vectorial, por lo que debemos de considerar que hablamos en las expresiones anteriores de sus magnitudes.</li>
+<li>Las unidades de $\omega$ son rad/s (radian entre segundo) y de $\alpha$ son rad/s$^2$.</li>
+</ul>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Movimiento-circular">Movimiento circular<a class="anchor-link" href="#Movimiento-circular">¶</a></h2><h3 id="Velocidad-angular-constante">Velocidad angular constante<a class="anchor-link" href="#Velocidad-angular-constante">¶</a></h3><p>En el caso en la que $\omega = \dot\theta$ sea una cantidad constante, la integración en el tiempo nos da como resultado el desplazamiento angular $\theta$ para todo tiempo, dando como resultado</p>
+$$
+\theta(t) = \int_{t_0}^t \dv{\theta}{t} \dd{t} = \int_{t_0}^t\omega\dd{t} = \omega t + \theta_0,
+$$<p>donde por conveniencia $\theta_0 =0$. Con este resultado podemos retomar el caracter vectorial de la posición como sem muestra a continuación</p>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<table>
+<tr>
+<td>
+<img alt="No description has been provided for this image" src="15-Circ.png" width="400"/>
+</td>
+<td>
+        Escribien el vector por componentes y sustituyendo con la expresión anterior se obtiene que
+        $$
+        \begin{aligned}
+        \vec{r}(t) &amp;= r(\cos\theta(t)\hat{e}_x + \sin\theta(t)\hat{e}_y )\\
+                    &amp;= r(\cos(\omega t)\hat{e}_x + \sin(\omega t)\hat{e}_y) \\ \\
+        ||\vec{r}|| &amp;= r \sqrt{\cos^2(\omega t) + \sin^2(\omega t)}= r
+        \end{aligned}
+        $$
+        Lo que nos permite definir el vector unidario que apunta en la dirección radial
+        $$
+        \hat{r} = \hat{e}_r = \cos\theta(t){e}_x + \sin\theta(t)\hat{e}_y ,
+        $$
+        Por lo que el vector posición también puede escribirse como
+        $$
+        \vec{r}(t) = r(\cos\theta(t){e}_x + \sin\theta(t)\hat{e}_y ) = r \hat{e}_r(t).
+        $$
+        <b>Nótese que este nuevo vector depende de $t$, a diferencia de los cartesianos que son constantes.</b>
+</td>
+</tr>
+</table>
+<hr/>
+<p>Kleppner, Daniel, y Robert J. Kolenkow. "An Introduction to Mechanics". Cambridge University Press, 2010</p>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Movimiento-circular">Movimiento circular<a class="anchor-link" href="#Movimiento-circular">¶</a></h2><h3 id="Velocidad-lineal-y-velocidad-angular">Velocidad lineal y velocidad angular<a class="anchor-link" href="#Velocidad-lineal-y-velocidad-angular">¶</a></h3><p>Notemos que podemos emplear las expresiones vectoriales de la posición y derivarlas para obtener la velocidad en cualquier base de vectores. De esta forma
+$$
+\vec{v} = \dv{\vec{r}}{t} = \dv{}{t}\big[r(\cos(\omega t)\hat{e}_x + \sin(\omega t)\hat{e}_y)  \big]
+    = r \omega \big(-\sin(\omega t)\hat{e}_x + \cos(\omega t)\hat{e}_y  \big)
+$$</p>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<table>
+<tr>
+<td>
+        Escribien el vector por componentes y sustituyendo con la expresión anterior se obtiene que
+        $$
+        \begin{aligned}
+        \vec{v}(t) &amp;= r\omega \big[ -\sin(\omega t)\hat{e}_x + \cos(\omega t)\hat{e}_y  \big]\\
+        ||\vec{v}|| &amp;= r\omega \sqrt{\sin^2(\omega t) + \cos^2(\omega t)}= r\omega
+        \end{aligned}
+        $$
+        Lo que nos permite definir el vector unidario que apunta en la dirección radial
+        $$
+        \hat{\theta} = \hat{e}_\theta= (-\sin\theta(t){e}_x + \cos\theta(t)\hat{e}_y ),
+        $$
+        Por lo que el vector velocidad también puede escribirse en este caso como
+        $$
+        \vec{v}(t) = r\omega(-\sin\theta(t){e}_x + \cos\theta(t)\hat{e}_y ) =  \omega r \hat{e}_\theta(t)
+        $$
+        <b>Nótese que este nuevo vector depende de $t$, a diferencia de los cartesianos que son constantes.</b>
+</td>
+<td>
+<img alt="No description has been provided for this image" src="16-CircVel.png" width="400"/>
+</td>
+</tr>
+</table>
+<hr/>
+<p>Kleppner, Daniel, y Robert J. Kolenkow. "An Introduction to Mechanics". Cambridge University Press, 2010</p>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Aceleraci%C3%B3n-lineal-y-aceleraci%C3%B3n-angular">Aceleración lineal y aceleración angular<a class="anchor-link" href="#Aceleraci%C3%B3n-lineal-y-aceleraci%C3%B3n-angular">¶</a></h3><p>Un procedimiento análogo al anterior puede hacerce con la aceleración:
+$$
+\vec{a} = \dv{\vec{v}}{t} = \dv{}{t}\big[ r \omega \big(-\sin(\omega t)\hat{e}_x + \cos(\omega t)\hat{e}_y  \big) \big]
+    = r \omega^2 \big(-\cos(\omega t)\hat{e}_x  -\sin(\omega t)\hat{e}_y  \big)
+$$</p>
+<table>
+<tr>
+<td>
+        Escribien el vector por componentes y sustituyendo con la expresión anterior se obtiene que
+        $$
+        \begin{aligned}
+        \vec{a}(t) &amp;= - r\omega^2 \big[ -\sin(\omega t)\hat{e}_x + \cos(\omega t)\hat{e}_y  \big]\\
+        ||\vec{a}|| &amp;= (r\omega^2) \sqrt{\cos^2(\omega t) + \sin(\omega t)}= r\omega^2
+        \end{aligned}
+        $$
+        Recordando la deficnición de $\hat{e}_r$, la eceleración puede escribirse como
+        $$
+        \vec{v}(t) = -r\omega^2(\cos\theta(t){e}_x +\sin\theta(t)\hat{e}_y ) =  -r\omega^2 \hat{e}_r(t)
+        $$
+    </td>
+<td>
+<img alt="No description has been provided for this image" src="17-CircAcel.png" width="400"/>
+</td>
+</tr>
+</table>
+<hr/>
+<p>Kleppner, Daniel, y Robert J. Kolenkow. "An Introduction to Mechanics". Cambridge University Press, 2010</p>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Identidades-notables-del-movimiento-circular">Identidades notables del movimiento circular<a class="anchor-link" href="#Identidades-notables-del-movimiento-circular">¶</a></h3><p>Recapitulando las expresiones derivadas anteriormente:</p>
+$$
+\left\{\begin{aligned}
+s &amp;= r \theta\\
+||\vec{r}|| &amp;= r \omega\\
+||\vec{a}|| &amp;= r \alpha = r \omega^2
+\end{aligned}\right.
+\qquad \Longrightarrow
+||\vec{a}|| = \frac{||\vec{v}||}{r^2}
+$$<center>
+<img alt="No description has been provided for this image" src="15-Circ.png" width="300"/><img alt="No description has been provided for this image" src="16-CircVel.png" width="300"/><img alt="No description has been provided for this image" src="17-CircAcel.png" width="300"/>
+</center>
+<hr/>
+<p>Kleppner, Daniel, y Robert J. Kolenkow. "An Introduction to Mechanics". Cambridge University Press, 2010</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs jp-mod-noInput">
 </div></section></section>
 </div>
 </div>
