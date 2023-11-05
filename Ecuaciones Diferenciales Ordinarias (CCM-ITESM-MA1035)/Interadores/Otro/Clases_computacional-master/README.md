@@ -1,2 +1,0 @@
-# integradores
-Integradores numéricos
