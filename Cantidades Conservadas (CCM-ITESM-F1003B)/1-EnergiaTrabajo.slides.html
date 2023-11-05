@@ -14744,7 +14744,7 @@ $\def\pdv#1#2#3{\dfrac{\partial^{#3} #1}{\partial #2^{#3}}}$
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h3 id="Energ%C3%ADa-y-trabajo:-Expresiones-generales">Energía y trabajo: Expresiones generales<a class="anchor-link" href="#Energ%C3%ADa-y-trabajo:-Expresiones-generales">¶</a></h3><table style="width:100%">
 <tr>
-<td style="width:40%">
+<td style="width:35%">
         De forma general 
         $$W_{1\to 2} = \int_1^2 \vb{F}\cdot \dd{\vb{r}}.$$
         Si se tiene una fuerza $\vb{F}$, 
@@ -14754,10 +14754,10 @@ $\def\pdv#1#2#3{\dfrac{\partial^{#3} #1}{\partial #2^{#3}}}$
 </ul>
    Se define entonces la <b>energía</b> $U$ como $$U = -W = -\int_1^2 \vb{F}\cdot \dd{\vb{r}}.$$
     </td>
-<td style="width:60%">
+<td style="width:65%">
 <center>
-<img alt="No description has been provided for this image" src="https://raw.githubusercontent.com/jaurrutia/Material-Didactico/main/Cantidades%20Conservadas%20(CCM-ITESM-F1003B)/img/WorkInt-dis.png" width="300"/>
-<img alt="No description has been provided for this image" src="https://raw.githubusercontent.com/jaurrutia/Material-Didactico/main/Cantidades%20Conservadas%20(CCM-ITESM-F1003B)/img/WorkInt-2.png" width="300"/>
+<img alt="No description has been provided for this image" src="https://raw.githubusercontent.com/jaurrutia/Material-Didactico/main/Cantidades%20Conservadas%20(CCM-ITESM-F1003B)/img/WorkInt-dis.png" width="250"/>
+<img alt="No description has been provided for this image" src="https://raw.githubusercontent.com/jaurrutia/Material-Didactico/main/Cantidades%20Conservadas%20(CCM-ITESM-F1003B)/img/WorkInt-2.png" width="250"/>
 </center>
 </td>
 </tr>
@@ -15043,6 +15043,119 @@ $$</p>
 <center>
 <img alt="No description has been provided for this image" src="https://raw.githubusercontent.com/jaurrutia/Material-Didactico/main/Cantidades%20Conservadas%20(CCM-ITESM-F1003B)/img/Ejercicios-Energia/Resbaladilla.png" width="600"/>
 </center>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Fuerzas-conservativas-y-disipativas">Fuerzas conservativas y disipativas<a class="anchor-link" href="#Fuerzas-conservativas-y-disipativas">¶</a></h2><table style="width:100%">
+<tr>
+<td style="width:100%">
+<center>
+<img alt="No description has been provided for this image" src="https://upload.wikimedia.org/wikipedia/commons/5/55/Energy%2C_Thomas_N._Wrenn.svg" width="400"/>
+</center>
+</td>
+<td align="left" style="width:0%">
+</td>
+</tr>
+</table>
+<hr/>
+<p><a href="https://commons.wikimedia.org/wiki/File:Energy,_Thomas_N._Wrenn.svg">Thomas N Wrenn</a>, Public domain, via Wikimedia Commons</p>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h1 id="Fuerzas-conservativas">Fuerzas conservativas<a class="anchor-link" href="#Fuerzas-conservativas">¶</a></h1><p>Por el <strong>Teorema fundamental del cálculo</strong> se puede interpretar que las integrales y las derivadas son (bajo algunas condiciones) operaciones inversas, como la suma-resta y la multiplicación-división, es decir
+$$
+\int_{x_0}^x \dv{g(x)}{x} \dd{x} = g(x)-g(x_0) = \Delta g.
+$$</p>
+<p>Recordando que para algunas fuerzas $F(x)$, como la de gravedad o un resorte, el trabajo que realiazaban se relacionaba con su diferencia de energía potencial como
+$$
+W = \int F(x)\dd{x} = -\Delta U,
+$$
+entonces se pueden realacionar estos conceptos también de la siguiente manera:
+$$
+F(x) = - \dv{U(x)}{x}.
+$$
+A las fuerzas que cumplen esa relación se les conoce como <strong>fuerzas conservativas</strong>, las cuales conservan la energía del sistema.</p>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Diagramas-de-energ%C3%ADa">Diagramas de energía<a class="anchor-link" href="#Diagramas-de-energ%C3%ADa">¶</a></h2><p>Al graficar el potencial $U(x)$ asociado a una fuerza conservativa, es posible analizar la dinámica del sistema sin necesidad de realizar algún cálculo.</p>
+<table style="width:100%">
+<tr>
+<td style="width:30%">
+<ul>
+<li>El sistema comienza con una energía $E$</li>
+<li>$E = E_c + U$ </li>
+<li>LA partícula se 'mueve' por la gráfica de $U$ si tiene la energía suficientes.</li>
+</ul>
+<b>Ejemplo:</b> Un infante en un columpio $$U(\theta) = mgh(1-\cos\theta)$$
+    </td>
+<td style="width:70%">
+<center>
+<img alt="No description has been provided for this image" src="https://raw.githubusercontent.com/jaurrutia/Material-Didactico/main/Cantidades%20Conservadas%20(CCM-ITESM-F1003B)/img/plotEnergy.png" width="400"/>
+</center>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h1 id="Fuerzas-disipativas">Fuerzas disipativas<a class="anchor-link" href="#Fuerzas-disipativas">¶</a></h1><p>Todas aquellas fuerzas que <strong>no puedan escribirse como</strong> $F(x) = - \dd{U(x)}\dd{x}$ se conocen como <strong>fuerzas no conservativas</strong>.</p>
+<ul>
+<li>Estas fuerzas transforman la energía en <strong>calor</strong> $Q$</li>
+<li>El calor es energía que se mantiene en el sistema pero ya no es accesible a usuario</li>
+<li>Estas fuerzas dependen de la <em>historia</em> de la partícula</li>
+<li>El trabajo de esta fuerza es la definición del calor</li>
+</ul>
+<p>La <strong>fricción</strong> y la <strong>resistencia al aire</strong> son ejemplos de este tipo de fuerzas.</p>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Para fuerzas de fricción constantes el calor se calcula con la definición del trabajo:</p>
+$$
+Q = \int \vb{F}_{fr}(x)\cdot\dd{\vb{x}} = -\int \mu N \dd{x} =  - \mu N \Delta x &lt; 0.
+$$<p>Donde el signo negativo es consecuencia de que estas fuerzas se oponen al movimmiento y por tanto $Q&lt;0$.</p>
+<p>Aunque es más usual determinal el calor $Q$ al comparar la energía cinética y potencial en dos puntos distintos.
+$$
+\begin{aligned}
+W_\text{Tot} = -\Delta U + Q = \Delta E_c 
+\quad
+\Longrightarrow
+\quad
+E_\text{Tot} = &amp; E_c(t_0) + U(t_0) \\
+            = &amp; E_c(t) + U(t) - Q \\
+            = &amp; E_c(t) + U(t) + |Q|. 
+\end{aligned}
+$$</p>
 </div>
 </div>
 </div>
