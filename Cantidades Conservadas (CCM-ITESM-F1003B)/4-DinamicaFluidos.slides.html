@@ -5,7 +5,7 @@
 <meta content="chrome=1" http-equiv="X-UA-Compatible"/>
 <meta content="yes" name="apple-mobile-web-app-capable"/>
 <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"/>
-<title>9-Delta-Heavyside slides</title><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>4-DinamicaFluidos slides</title><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <!-- General and theme style sheets -->
 <link href="https://unpkg.com/reveal.js@4.0.2/dist/reveal.css" rel="stylesheet"/>
 <!-- If the query includes 'print-pdf', include the PDF print sheet -->
@@ -14662,89 +14662,58 @@ div.jp-OutputPrompt {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Modelaci%C3%B3n-de-sistemas-din%C3%A1micos"><strong>Modelación de sistemas dinámicos</strong><a class="anchor-link" href="#Modelaci%C3%B3n-de-sistemas-din%C3%A1micos">¶</a></h1><h1 id="Transformada-de-Laplace:-Theta-de-Heaviside-y-Delta-de-Dirac">Transformada de Laplace: Theta de Heaviside y Delta de Dirac<a class="anchor-link" href="#Transformada-de-Laplace:-Theta-de-Heaviside-y-Delta-de-Dirac">¶</a></h1><h3 id="M.-en-C.-Jonathan-A.-Urrutia-Anguiano">M. en C. Jonathan A. Urrutia Anguiano<a class="anchor-link" href="#M.-en-C.-Jonathan-A.-Urrutia-Anguiano">¶</a></h3><h3 id="MA1035.535">MA1035.535<a class="anchor-link" href="#MA1035.535">¶</a></h3><div hidden="">
+<h1 id="Aplicaci%C3%B3n-de-las-leyes-de-conservaci%C3%B3n-en-ingenier%C3%ADa-de-procesos"><strong>Aplicación de las leyes de conservación en ingeniería de procesos</strong><a class="anchor-link" href="#Aplicaci%C3%B3n-de-las-leyes-de-conservaci%C3%B3n-en-ingenier%C3%ADa-de-procesos">¶</a></h1><h2 id="Din%C3%A1mica-de-fluidos"><strong>Dinámica de fluidos</strong><a class="anchor-link" href="#Din%C3%A1mica-de-fluidos">¶</a></h2><h3 id="M.-en-C.-Jonathan-A.-Urrutia-Anguiano">M. en C. Jonathan A. Urrutia Anguiano<a class="anchor-link" href="#M.-en-C.-Jonathan-A.-Urrutia-Anguiano">¶</a></h3><h3 id="F1003B">F1003B<a class="anchor-link" href="#F1003B">¶</a></h3><div hidden="">
 $\def\dd{\text{d}}$
 $\def\dv#1#2{\dfrac{\text{d} #1}{\text{d}#2}}$
 $\def\mdv#1#2#3{\dfrac{\text{d}^{#3} #1}{\text{d}#2^{#3}}}$
 $\def\vb#1{\mathbf{#1}}$
 $\def\pdv#1#2#3{\dfrac{\partial^{#3} #1}{\partial #2^{#3}}}$
-$\def\pmat#1#2{\left( \begin{array}{#1} #2 \end{array}  \right)}$
 \vskip-\parskip
 \vskip-\baselineskip
 </div>
 </div>
 </div>
 </div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="ODE--en-situaciones-realistas">ODE  en situaciones realistas<a class="anchor-link" href="#ODE--en-situaciones-realistas">¶</a></h2><table style="width:100%">
-<tr>
-<td style="width:40%">
-<center>
-<img alt="No description has been provided for this image" src="https://upload.wikimedia.org/wikipedia/commons/4/4e/RLC_series_circuit.png" width="200"/>
-</center>
-<td style="width:60%">
-     $$L Q'' + RQ' +\frac{1}{C}Q = E(t)$$
-        Switch:
-     $$E(t) = 0 \text{ si } 0<t<4;\quad $$="" $$e(t)="1000" 4="" 4$$="" <="" \text{="" e(t)="1000" impulso="" si="" t="4;\quad" t\geq="" t\neq="" td="" }="">
-</t<4;\quad></td></td></tr>
-</table>
-</div>
-</div>
-</div>
 </div></section><section>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Gaussianas-y-funci%C3%B3n-error">Gaussianas y función error<a class="anchor-link" href="#Gaussianas-y-funci%C3%B3n-error">¶</a></h2><table style="width:100%">
-<tr>
-<td style="width:50%">
-<center>
-            $$f(x) = \frac{1}{\sigma\sqrt{2\pi}}\exp\left[\left(\frac{x-\mu}{\sqrt{2}\sigma}\right)^2\right]$$
-             <img alt="No description has been provided for this image" src="https://upload.wikimedia.org/wikipedia/commons/7/74/Normal_Distribution_PDF.svg"/>
+<h2 id="Est%C3%A1tica-de-fluidos">Estática de fluidos<a class="anchor-link" href="#Est%C3%A1tica-de-fluidos">¶</a></h2><h3 id="%C2%BFQu%C3%A9-es-un-fluido?">¿Qué es un fluido?<a class="anchor-link" href="#%C2%BFQu%C3%A9-es-un-fluido?">¶</a></h3><center>
+<img alt="No description has been provided for this image" src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Gas_velocity.gif" width="350"/>
 </center>
-<td style="width:50%">
+HPP simulation of gas flow inside a closed space. Yellow cells are reflectors. This shows the resulting gas flow when a hole or void inside the container is filled.
+<hr/>
+<p><a href="https://commons.wikimedia.org/wiki/File:Gas_velocity.gif">Simpsons contributor</a>, Public domain, via Wikimedia Commons</p>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Presi%C3%B3n">Presión<a class="anchor-link" href="#Presi%C3%B3n">¶</a></h3><table style="width:100%">
+<tr>
+<td style="width:33%">
 <center>
-            $$F(x) = \int_{-\infty}^x\frac{1}{\sigma\sqrt{2\pi}}\exp\left[\left(\frac{y-\mu}{\sqrt{2}\sigma}\right)^2\right]\dd{y}$$
-             <img alt="No description has been provided for this image" src="https://upload.wikimedia.org/wikipedia/commons/c/ca/Normal_Distribution_CDF.svg"/>
+<img alt="No description has been provided for this image" src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Gas_velocity.gif"/>
 </center>
 </td>
-</td></tr>
-</table>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Theta-de-Heaviside-y-Delta-de-Dirac">Theta de Heaviside y Delta de Dirac<a class="anchor-link" href="#Theta-de-Heaviside-y-Delta-de-Dirac">¶</a></h2><table style="width:100%">
-<tr>
-<td style="width:50%">
+<td style="width:33%">
 <center>
-<img alt="No description has been provided for this image" src="https://latex.codecogs.com/gif.image?\dpi{200}%5CTheta%28t-t_0%29%20%3D%20%5Clim_%7B%5Csigma%5Cto%200%7D%5Cint_%7B-%5Cinfty%7D%5Et%5Cfrac%7B1%7D%7B%5Csigma%5Csqrt%7B2%5Cpi%7D%7D%5Cexp%5Cleft%5B%5Cleft%28%5Cfrac%7Bx-t_0%7D%7B%5Csqrt%7B2%7D%5Csigma%7D%5Cright%29%5E2%5Cright%5D%5Ctext%7Bd%7D%7Bx%7D%20%3D%20%5Cleft%5C%7B%20%5Cbegin%7Barray%7D%7Bll%7D%200%2C%20%26%20t%3Ct_0%20%5C%5C%201%2C%20%26%20t_0%5Cleq%20t%20%5Cend%7Barray%7D%20%5Cright." width="350"/>
+<img alt="No description has been provided for this image" src="https://raw.githubusercontent.com/jaurrutia/Material-Didactico/main/Cantidades%20Conservadas%20(CCM-ITESM-F1003B)/img/Presion.png"/>
 </center>
-    Ejemplo:
-            $$ f(t) = \Theta(t-a)-\Theta(t-b) $$
-            <img alt="No description has been provided for this image" src="https://latex.codecogs.com/gif.image?\dpi{200}f%28t%29%20%3D%20%5Cleft%5C%7B%20%5Cbegin%7Barray%7D%7Bll%7D%20t%2C%20%26%200%5Cleq%20t%20%3C%202%20%5C%5C%202%2C%20%26%202%5Cleq%20t%20%5Cleq%204%5C%5C%200%2C%26%204%3Ct%20%5Cend%7Barray%7D%20%5Cright." width="175"/>
-
-<td style="width:50%">
-<center>
-<img alt="No description has been provided for this image" src="https://latex.codecogs.com/gif.image?\dpi{200}%5Cdelta%28t-t_0%29%20%3D%20%5Clim_%7B%5Csigma%5Cto%200%7D%5Cfrac%7B1%7D%7B%5Csigma%5Csqrt%7B2%5Cpi%7D%7D%5Cexp%5Cleft%5B%5Cleft%28%5Cfrac%7Bt-t_0%7D%7B%5Csqrt%7B2%7D%5Csigma%7D%5Cright%29%5E2%5Cright%5D%20%3D%20%5Cleft%5C%7B%20%5Cbegin%7Barray%7D%7Bll%7D%200%2C%20%26%20t%5Cneq%20t_0%20%5C%5C%20%5Cinfty%20%26%20t%20%3D%20t_0%20%5Cend%7Barray%7D%20%5Cright." width="350"/>
-</center> 
-    Ejemplo:
-            $$\int f(t) \delta(t-t_0)\dd{t} = f(t_0)$$
-    </td>
-</td></tr>
+</td>
+<td style="width:33%">
+        $$ \dd{F} = P \dd{A}$$
+        $$ P [=] \text{Pa} \equiv \text{N m}^{-2}$$
+    </td> </tr>
 </table>
+<hr/>
+<p>Serway, R.A., y Jewett J. "Física para ciencias e ingenierías Vol. 1". Cengage Learning Editores S.A. de C.V., 2008.</p>
 </div>
 </div>
 </div>
@@ -14754,23 +14723,252 @@ $\def\pmat#1#2{\left( \begin{array}{#1} #2 \end{array}  \right)}$
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Transformada-de-Laplace-de-la-Theta-de-Heaviside">Transformada de Laplace de la Theta de Heaviside<a class="anchor-link" href="#Transformada-de-Laplace-de-la-Theta-de-Heaviside">¶</a></h3><center>
-<table style="width:80%">
+<h3 id="Ley-de-Pascal">Ley de Pascal<a class="anchor-link" href="#Ley-de-Pascal">¶</a></h3><table style="width:100%">
 <tr>
-<td style="width:40%">
-        $\mathcal{L}[f(t)\Theta(t-t_0)] = e^{-st_0}\mathcal{L}[f(t+t_0)]$
-    </td>
-<td style="width:40%">
-        $\mathcal{L}[f(t-t_0)\Theta(t-t_0)] = e^{-st_0}\mathcal{L}[f(t)]$  
+<td style="width:33%">
+<center>
+<img alt="No description has been provided for this image" src="https://raw.githubusercontent.com/jaurrutia/Material-Didactico/main/Cantidades%20Conservadas%20(CCM-ITESM-F1003B)/img/PresionAltura.png"/>
+</center>
+</td>
+<td style="width:66%">
+        $$\begin{aligned}
+            \vec{F}_\text{Tot}  &amp;= \left(P A - P_0 A - M g \right)\hat{e}_y = \vec{0} \\
+                        P&amp; = P_0 + \rho g h,\quad\text{donde}\quad \rho = M\dd{V} = M A\dd{h} 
+        \end{aligned}$$
+        <b>Ley de Pascal:</b> Un cambio en la presión aplicada a un fluido se transmite sin disminución a todos los puntos del fluido y a las paredes del contenedor.
     </td>
 </tr>
 </table>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<center>
+<img alt="No description has been provided for this image" src="https://raw.githubusercontent.com/jaurrutia/Material-Didactico/main/Cantidades%20Conservadas%20(CCM-ITESM-F1003B)/img/Pascal.png"/>
 </center>
-$$
-\mathcal{L}[\Theta(t-t_0)] = e^{-st_0}\frac{1}{s}
-$$<h3 id="Transformada-de-Laplace-de-la-Delta-de-Dirac">Transformada de Laplace de la Delta de Dirac<a class="anchor-link" href="#Transformada-de-Laplace-de-la-Delta-de-Dirac">¶</a></h3>$$
-\mathcal{L}[\delta(t-t_0)]  = \mathcal{L}[\Theta'(t-t_0)] = s \mathcal{L}[\Theta(t-t_0)] - \Theta(0) = e^{-st_0}
-$$
+</div>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Fuerza-boyante">Fuerza boyante<a class="anchor-link" href="#Fuerza-boyante">¶</a></h2><h3 id="Principio-de-Arqu%C3%ADmides">Principio de Arquímides<a class="anchor-link" href="#Principio-de-Arqu%C3%ADmides">¶</a></h3><table style="width:100%">
+<tr>
+<td style="width:35%">
+<center>
+<img alt="No description has been provided for this image" src="https://raw.githubusercontent.com/jaurrutia/Material-Didactico/main/Cantidades%20Conservadas%20(CCM-ITESM-F1003B)/img/Arqui1.png"/>
+</center>
+</td>
+<td style="width:66%">
+<center>
+<b>Principio de Arquímides:</b> La magnitud de la fuerza de flotación sobre un objeto siempre es igual al peso del fluido desplazado por el objeto.
+</center>
+</td>
+</tr>
+</table>
+<center>
+<img alt="No description has been provided for this image" src="https://raw.githubusercontent.com/jaurrutia/Material-Didactico/main/Cantidades%20Conservadas%20(CCM-ITESM-F1003B)/img/Arqui2.png"/>
+</center>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Fuerza-boyante">Fuerza boyante<a class="anchor-link" href="#Fuerza-boyante">¶</a></h2><h3 id="An%C3%A1lisis-con-presions">Análisis con presions<a class="anchor-link" href="#An%C3%A1lisis-con-presions">¶</a></h3><table style="width:100%">
+<tr>
+<td style="width:33%">
+<center>
+<img alt="No description has been provided for this image" src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Pressure_distribution_on_an_immersed_cube.png"/>
+</center>
+</td>
+<td style="width:33%">
+<center>
+<img alt="No description has been provided for this image" src="https://upload.wikimedia.org/wikipedia/commons/0/0f/ArchimedischesPrinzipHerleitung.svg"/>
+</center>
+</td>
+<td style="width:33%">
+        $$
+        B = \left[p(z_0+h) - p(z_0)\right] A = \rho g h A = \rho g V
+        $$
+    </td>
+</tr>
+</table>
+<hr/>
+<p><a href="https://commons.wikimedia.org/wiki/File:Pressure_distribution_on_an_immersed_cube.png">Peter Southwood</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>, via Wikimedia Commons</p>
+<p><a href="https://commons.wikimedia.org/wiki/File:ArchimedischesPrinzipHerleitung.svg">Joker1987</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>, via Wikimedia Commons</p>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Din%C3%A1mica-de-fluidos">Dinámica de fluidos<a class="anchor-link" href="#Din%C3%A1mica-de-fluidos">¶</a></h2><center>
+<img alt="No description has been provided for this image" src="https://upload.wikimedia.org/wikipedia/commons/b/bc/Anim_ProfilSym%2C_smokes.gif"/>
+</center>
+<hr/>
+<p><a href="https://commons.wikimedia.org/wiki/File:Anim_ProfilSym,_smokes.gif">NACA (sans doute Langley) autour de 1935 ou 1938.</a>, Public domain, via Wikimedia Commons</p>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Fluido-ideal">Fluido ideal<a class="anchor-link" href="#Fluido-ideal">¶</a></h3><table style="width:100%">
+<tr>
+<td style="width:30%">
+<ul>
+<li><b>No viscoso</b> </li>
+<li>Laminar</li>
+<li>Incompresible ($\rho = \text{cte}$)</li>
+<li>Irrotacional</li>
+</ul>
+</td>
+<td style="width:70%">
+<center>
+<img alt="No description has been provided for this image" src="https://upload.wikimedia.org/wikipedia/commons/4/47/Perfiles_de_velocidad_en_un_fluido_sin_viscosidad_%28a%29_y_con_viscosidad_%28b%29.svg"/>
+</center>
+</td>
+</tr>
+</table>
+<hr/>
+<p><a href="https://commons.wikimedia.org/wiki/File:Perfiles_de_velocidad_en_un_fluido_sin_viscosidad_(a)_y_con_viscosidad_(b).svg">Dione Murrieta</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, via Wikimedia Commons</p>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Fluido-ideal">Fluido ideal<a class="anchor-link" href="#Fluido-ideal">¶</a></h3><table style="width:100%">
+<tr>
+<td style="width:20%">
+<ul>
+<li>No viscoso</li>
+<li><b>Laminar</b></li>
+<li>Incompresible ($\rho = \text{cte}$)</li>
+<li>Irrotacional</li>
+</ul>
+</td>
+<td style="width:40%">
+<center>
+<img alt="No description has been provided for this image" src="https://upload.wikimedia.org/wikipedia/commons/6/6f/T%C3%BAnel_de_viento%2C_v%C3%B3rtice_de_Von_Karman.gif"/>
+</center>
+</td>
+<td style="width:30%">
+<center>
+<img alt="No description has been provided for this image" src="https://techblog.ctgclean.com/wp-content/uploads/laminar-Water-Jets-e1441893063760.jpg"/>
+</center>
+</td>
+</tr>
+</table>
+<hr/>
+<p><a href="https://commons.wikimedia.org/wiki/File:T%C3%BAnel_de_viento,_v%C3%B3rtice_de_Von_Karman.gif">PR</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>, via Wikimedia Commons</p>
+<p>Laminar flow streams of water    (www.paragonpoolslv.com)</p>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Fluido-ideal">Fluido ideal<a class="anchor-link" href="#Fluido-ideal">¶</a></h3><table style="width:100%">
+<tr>
+<td style="width:30%">
+<ul>
+<li>No viscoso</li>
+<li>Laminar</li>
+<li>Incompresible ($\rho = \text{cte}$)</li>
+<li><b>Irrotacional</b></li>
+</ul>
+</td>
+<td style="width:70%">
+<center>
+<img alt="No description has been provided for this image" src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Karmansche_Wirbelstr_gro%C3%9Fe_Re.JPG"/>
+</center>
+</td>
+</tr>
+</table>
+<hr/>
+<p><a href="https://commons.wikimedia.org/wiki/File:Karmansche_Wirbelstr_gro%C3%9Fe_Re.JPG">Jürgen Wagner</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, via Wikimedia Commons</p>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Cantidades-conservadas-en-un-fluido-ideal">Cantidades conservadas en un fluido ideal<a class="anchor-link" href="#Cantidades-conservadas-en-un-fluido-ideal">¶</a></h2><h3 id="Ecuaci%C3%B3n-de-continuidad-(Conservaci%C3%B3n-de-la-masa)">Ecuación de continuidad (Conservación de la masa)<a class="anchor-link" href="#Ecuaci%C3%B3n-de-continuidad-(Conservaci%C3%B3n-de-la-masa)">¶</a></h3><table style="width:100%">
+<tr>
+<td style="width:30%">
+<center>
+<img alt="No description has been provided for this image" src="https://raw.githubusercontent.com/jaurrutia/Material-Didactico/main/Cantidades%20Conservadas%20(CCM-ITESM-F1003B)/img/FIdeal1.png" width="450"/>
+</center>
+</td>
+<td style="width:30%">
+<center>
+<img alt="No description has been provided for this image" src="https://raw.githubusercontent.com/jaurrutia/Material-Didactico/main/Cantidades%20Conservadas%20(CCM-ITESM-F1003B)/img/FIdeal2.png" width="350"/>
+</center>
+</td>
+<td style="width:30%">
+        $$m_1 = m_2$$
+        $$m_i = \rho V_i = \rho A_i \Delta x_i = \rho A_i v_i \Delta t$$
+        $$ A_1 v_1 = a_2 v_2$$
+    </td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Cantidades-conservadas-en-un-fluido-ideal">Cantidades conservadas en un fluido ideal<a class="anchor-link" href="#Cantidades-conservadas-en-un-fluido-ideal">¶</a></h2><h3 id="Ecuaci%C3%B3n-de-Bernoulli-(Conservaci%C3%B3n-de-la-energ%C3%ADa)">Ecuación de Bernoulli (Conservación de la energía)<a class="anchor-link" href="#Ecuaci%C3%B3n-de-Bernoulli-(Conservaci%C3%B3n-de-la-energ%C3%ADa)">¶</a></h3><table style="width:100%">
+<tr>
+<td style="width:30%">
+<center>
+<img alt="No description has been provided for this image" src="https://raw.githubusercontent.com/jaurrutia/Material-Didactico/main/Cantidades%20Conservadas%20(CCM-ITESM-F1003B)/img/Bern1.png" width="450"/>
+</center>
+</td>
+<td style="width:30%">
+<center>
+<img alt="No description has been provided for this image" src="https://raw.githubusercontent.com/jaurrutia/Material-Didactico/main/Cantidades%20Conservadas%20(CCM-ITESM-F1003B)/img/Bern2.png" width="350"/>
+</center>
+</td>
+<td style="width:30%">
+        $$ W_F = F \Delta x = (P_1-P_2)A \Delta x = (P_1-P_2)  V$$
+        $$ \Delta E_c =  W_\text{Tot} = W_F - \Delta U$$
+        $$ \Delta P = \frac{\Delta E_c}{V} + \frac{\Delta U}{V}$$
+        $$ P + \frac12 \rho v^2 + \rho g y = \text{cte} $$
+    </td>
+</tr>
+</table>
 </div>
 </div>
 </div>
